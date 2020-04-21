@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr [col-end]);
+  grid-template-rows: 8rem;
+  background: $color-secondary;
+  min-height: 100vh;
+  
+}
+
