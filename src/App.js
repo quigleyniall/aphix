@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from './components/layout';
 import FormWrapper from './components/form/formWrapper';
 import TextInput from './components/form/textInput';
-import './sass/main.scss';
 
 class App extends React.Component {
   constructor() {
