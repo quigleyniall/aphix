@@ -1,12 +1,12 @@
 .container {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr [col-end]);
-  grid-template-rows: minmax(0, 1fr) [nav-start] max-content [nav-end content-start] max-content [content-end] minmax(0, 1fr);
+  grid-template-rows: minmax(40px, 1fr) [nav-start] min-content [nav-end content-start] max-content [content-end] minmax(40px, 1fr);
   background: $color-secondary;
   min-height: 100vh;
 
   @include respond(tab-land) {
-    grid-template-rows: [nav-start] max-content [nav-end content-start] minmax(max-content, 1fr) [content-end]
+    grid-template-rows: [nav-start] min-content [nav-end content-start] minmax(max-content, 1fr) [content-end]
   }
 }
 
@@ -23,7 +23,7 @@
 .calculation-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 64px;
+  padding: 32px 64px;
   grid-gap: 64px;
 
   @include respond(tab-port) {

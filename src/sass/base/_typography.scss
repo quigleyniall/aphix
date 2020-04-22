@@ -1,7 +1,7 @@
 .heading-primary {
   font-family: $font-primary;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 24px;
 
   @include respond(tab-port) {
     font-size: 24px;
