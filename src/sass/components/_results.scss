@@ -1,0 +1,23 @@
+.results {
+  padding: 32px;
+  border: 3px solid $color-white;
+  height: fit-content;
+
+  @include respond(tab-port) {
+    padding: 16px;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-white;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+}
